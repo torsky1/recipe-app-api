@@ -347,7 +347,7 @@ class PrivateRecipeApiTests(TestCase):
         """Test assigning an existing ingredient when updating a recipe"""
         ingredient1 = Ingredient.objects.create(user=self.user, name='Pepper')
         recipe = create_recipe(user=self.user)
-        recipe.ingredients(ingredient1)
+        recipe.ingredients.add(ingredient1)
 
         ingredient2 = Ingredient.objects.create(user=self.user, name='Chili')
         payload = {'ingredients': [{'name': 'Chili'}]}
