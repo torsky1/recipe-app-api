@@ -29,7 +29,8 @@ def test_wait_for_db_ready(patched_check):
 
 def test_wait_for_db_delay(patched_check, patched_sleep):
     """Test waiting for database when getting OperationalError"""
-    patched_check.side_effect = [Psycopg2Error] * 2 + [OperationalError] * 3 + [True]
+    patched_check.side_effect = (
+        [Psycopg2Error] * 2 + [OperationalError] * 3 + [True])
     call_command('wait_for_db')
     assert patched_check.call_count == 6
     patched_check.assert_called_with(databases=['default'])
