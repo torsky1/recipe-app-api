@@ -1,7 +1,6 @@
 """
 Test for recipe API
 """
-from venv import create
 import pytest
 
 from decimal import Decimal
