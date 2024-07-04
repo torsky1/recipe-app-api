@@ -49,5 +49,10 @@ This repository contains a Recipe App API built using Django and Django REST Fra
 #  API Documentation
  - **Detailed API documentation is available at** http://localhost:8000/api/docs.
 
+# Running Tests
+ - To run tests, use the following command:
+   ```bash
+   docker-compose run --rm app sh -c "pytest"
+   
 #  Contributing
  - **Contributions are welcome!** Please fork the repository and submit a pull request with your changes.
