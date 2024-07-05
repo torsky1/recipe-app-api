@@ -53,6 +53,6 @@ This repository contains a Recipe App API built using Django and Django REST Fra
  - To run tests, use the following command:
    ```bash
    docker-compose run --rm app sh -c "pytest"
-   
+
 #  Contributing
  - **Contributions are welcome!** Please fork the repository and submit a pull request with your changes.
