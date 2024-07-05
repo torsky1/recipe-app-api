@@ -33,19 +33,20 @@ This repository contains a Recipe App API built using Django and Django REST Fra
    ```bash
    git clone https://github.com/torsky1/recipe-app-api.git
    cd recipe-app-api
-2. Build and run the Docker containers:
 
-   ```bash
-   docker-compose up
-3. Apply database migrations:
+2. Apply database migrations:
 
    ```bash
    docker-compose run app sh -c "python manage.py makemigrations"
-4. Create a superuser:
+3. Create a superuser:
 
    ```bash
     docker-compose run app sh -c "python manage.py createsuperuser"
 
+4. Build and run the Docker containers:
+
+   ```bash
+   docker-compose up
 #  API Documentation
  - **Detailed API documentation is available at** http://localhost:8000/api/docs.
 
